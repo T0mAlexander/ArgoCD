@@ -124,3 +124,15 @@ spec:
 ```
 
 **Lembrete:** não esqueça de enviar as alterações, pois o ArgoCD considera o repositório como único referencial
+
+### 1.4.1 Vincule o repositório ao ArgoCD
+
+![associando repositório](./screenshots/repo-link-argo.png)
+![conectando o repositório](./screenshots/repo-link-argo-2.png)
+![conectando o repositório](./screenshots/repo-link-argo-3.png)
+
+### 1.4.2 Faça deploy de uma aplicação via ArgoCD
+
+![criando app via argo](./screenshots/criando-app-via-argo.png)
+![criando app via argo](./screenshots/criando-app-via-argo-2.png)
+![criando app via argo](./screenshots/criando-app-via-argo-3.png)
