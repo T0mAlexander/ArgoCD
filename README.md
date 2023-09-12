@@ -123,4 +123,4 @@ spec:
   type: NodePort
 ```
 
-**Lembrete:** não esqueça de enviar as alterações para o repositório
+**Lembrete:** não esqueça de enviar as alterações, pois o ArgoCD considera o repositório como único referencial
