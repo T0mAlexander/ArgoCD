@@ -129,10 +129,30 @@ spec:
 
 ![associando repositório](./screenshots/repo-link-argo.png)
 ![conectando o repositório](./screenshots/repo-link-argo-2.png)
-![conectando o repositório](./screenshots/repo-link-argo-3.png)
+![conectando o repositório](./screenshots/conectando-repo.png)
 
-### 1.4.2 Faça deploy de uma aplicação via ArgoCD
+### 1.4.2 Habilite auto sincronização com seu cluster local
+
+![habilitando auto sync](./screenshots/cluster-auto-sync.png)
+
+### 1.4.3 Faça deploy de um serviço de aplicação via ArgoCD
 
 ![criando app via argo](./screenshots/criando-app-via-argo.png)
-![criando app via argo](./screenshots/criando-app-via-argo-2.png)
-![criando app via argo](./screenshots/criando-app-via-argo-3.png)
+![info do app 1](./screenshots/criando-app-via-argo-2.png)
+![info do app 2](./screenshots/criando-app-via-argo-4.png)
+
+### 1.4.4 Liste os serviços para ver o deploy
+
+```shell
+kubectl get svc
+```
+
+![nginx rodando](./screenshots/nginx-rodando.png)
+
+> **💡 Dica de ouro:** a principal função do ArgoCD é automatizar o deploy de qualquer recurso do Kubernetes (e.g Pods, Services, Deployments e outros) através da monitoria do repositório e dispensando digitar frequentemente o comando `kubectl apply`
+
+### 1.4.5 Encaminhe a porta da aplicação para acesso
+
+```shell
+kubectl port-forward svc/[serviço] -n default [porta]:[porta-svc]
+```
